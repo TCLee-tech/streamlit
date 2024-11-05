@@ -4,7 +4,17 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Streamlit App", page_icon=":snowflake:") # in brower tab
+
 st.title("Uber pickups in NYC")
+
+# https://docs.streamlit.io/develop/api-reference/layout/st.sidebar
+# https://docs.streamlit.io/develop/api-reference/widgets/st.selectbox
+st.sidebar.selectbox("This is a Selectbox in a Sidebar", ("New York", "London", "Hong Kong"))
+
+# https://docs.streamlit.io/develop/api-reference/status/st.success
+st.sidebar.success("Success text in sidebar", icon="✅")
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/streamlit-demo-data/uber-raw-data-sep14.csv.gz')
