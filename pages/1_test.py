@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.sidebar.markdown("# :sparkles: Page 2 :sparkles:")
+
 st.markdown("# Page 2")
 "Old MacDonald had a farm. :deciduous_tree: :evergreen_tree:" 
 "   E-I-E-I-O!"
@@ -11,5 +13,5 @@ st.markdown("# Page 2")
 "Old MacDonald had a farm. :deciduous_tree: :evergreen_tree:" 
 "   E-I-E-I-O!"
 
-st.sidebar.markdown("# :sparkles: Page 2 :sparkles:")
+
 
