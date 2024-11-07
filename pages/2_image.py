@@ -6,11 +6,15 @@ st.sidebar.markdown("# :sparkles: Computer Vision :sparkles:")
 # returns UploadedFile object, assigned to 'picture' variable
 # UploadedFile class is subclass of BytesIO. BytesIO allows you to treat bytes as in-memory file-like objects.
 # https://docs.python.org/3/library/io.html#io.BytesIO
+
 picture = st.camera_input("Computer Vision")
+
 if picture:
     st.write("Successful!")
+   
     # https://docs.opencv.org/3.4/index.html
     # https://docs.streamlit.io/develop/api-reference/media/st.image
     st.image(picture,channels="RGB")
+   
     st.write("This is only a test of the user interface. Your image is not saved nor retained.")
 
