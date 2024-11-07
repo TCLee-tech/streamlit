@@ -12,5 +12,5 @@ if picture:
     # https://docs.opencv.org/3.4/index.html
     # https://docs.streamlit.io/develop/api-reference/media/st.image
     st.image(picture,channels="RGB")
-    st.write("This user interface is only a test. Your image is not saved nor retained. Have fun!")
+    st.write("This is only a test of the user interface. Your image is not saved nor retained.")
 
